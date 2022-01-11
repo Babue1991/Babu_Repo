@@ -17,6 +17,9 @@ public class Parent {
 	public static void method1(int s) {
 		System.out.println("inside parent");
 	}
+	private static void method1(float s) {
+		System.out.println("inside parent");
+	}
 	
 
 public static void method1(String a) {
@@ -26,7 +29,7 @@ public static void method1(String a) {
 
 
 class sub extends Parent{
-	private static void method1(String a) {
+	public static void method1(int a) {
 		System.out.println("inside sub");
 	}
 	}
