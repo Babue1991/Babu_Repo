@@ -17,7 +17,7 @@ public class LoginCase {
 	public static WebElement password;
 	
 	@FindBy(className="btn btn-default btn-lg btn-block effect ladda-button waves-effect")
-	public static WebElement Singin;
+	public static WebElement Singin;  
 	
 	
 	/*
