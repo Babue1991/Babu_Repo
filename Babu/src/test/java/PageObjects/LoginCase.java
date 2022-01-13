@@ -11,7 +11,7 @@ public class LoginCase {
 
 	
 	@FindBy(name="q")
-	public static WebElement userName;
+	public static WebElement userName;   
 	
 	@FindBy(className ="gNO89b")
 	public static WebElement password;
