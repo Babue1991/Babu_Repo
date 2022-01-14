@@ -25,6 +25,7 @@ public class LoginTC {
 	
 		LoginCase.userName.sendKeys("user@phptravels.com");
 		LoginCase.password.click();
+		Sytem.out.println("The print statement added");
 		
 	/*
 	 * Login.username(driver).sendKeys("demo");
