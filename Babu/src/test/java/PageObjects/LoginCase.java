@@ -13,8 +13,8 @@ public class LoginCase {
 	@FindBy(name="q")
 	public static WebElement userName;   
 	
-	@FindBy(className ="gNO89b")
-	public static WebElement password;
+	@FindBy(name ="email")
+	public static WebElement UserName;
 	
 	@FindBy(className="btn btn-default btn-lg btn-block effect ladda-button waves-effect")
 	public static WebElement Singin;  
