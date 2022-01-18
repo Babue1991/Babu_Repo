@@ -22,6 +22,7 @@ public class Browserlaunch {
 	
 	@AfterClass
 	public static void driverClose() {
-		driver.close();
+		System.out.println("close browser");
+	//	driver.close();
 	}
 }

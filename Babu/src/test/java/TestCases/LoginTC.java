@@ -14,19 +14,21 @@ import net.bytebuddy.implementation.bind.annotation.Super;
 
 public class LoginTC extends Browserlaunch{
 
-	WebDriver driver = Browserlaunch.driver;
+	WebDriver driver ;
 	
 	@Test
 	public void logintest() {
 		System.out.println("inside login test");
+		driver = Browserlaunch.driver;
 		/*
 		 * System.setProperty("webdriver.gecko.driver",
 		 * "C:\\Users\\Lenovo\\Downloads\\geckodriver-v0.30.0-win64\\geckodriver.exe");
 		 * driver = new FirefoxDriver(); driver.get("https://dev.smallmoves.org/login");
 		 */	
-		
+		//driver = 
+		System.out.println("Driver value is " +driver);
 	//	PageFactory.initElements(driver,LoginCase.class);
-		PageFactory.initElements(driver, Browserlaunch.class);
+		PageFactory.initElements(driver, LoginCase.class);
 
 	//	LoginCase.uName(driver).sendKeys("babu@fsp.com");
 	

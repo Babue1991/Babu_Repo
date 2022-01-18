@@ -6,7 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import Utility.Browserlaunch;
+
 public class LoginCase {
+	WebDriver driver = Browserlaunch.driver;
 	
 	/*
 	 * @FindBy(name="q") public static WebElement userName;
