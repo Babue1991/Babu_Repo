@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--624775266\testng-customsuite.xml</span>
+                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--1187060470\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,27 +130,8 @@
                   <a name="logintest">
                   </a> <!-- logintest -->
                   <span class="method-name">logintest</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/internal/Locatable
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:151)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:825)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:723)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:646)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
-	at org.openqa.selenium.remote.internal.JsonToWebElementConverter.newRemoteWebElement(JsonToWebElementConverter.java:77)
-	at org.openqa.selenium.remote.internal.JsonToWebElementConverter.apply(JsonToWebElementConverter.java:58)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:485)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at TestCases.LoginTC.logintest(LoginTC.java:26)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])&quot; because &quot;PageObjects.LoginCase.UserName&quot; is null
+	at TestCases.LoginTC.logintest(LoginTC.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -179,11 +160,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locatable
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
-	... 48 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -193,7 +169,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--624775266\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--1187060470\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -246,12 +222,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logintest')
 data.setCell(0, 2, 'TestCases.LoginTC')
-data.setCell(0, 3, 27944);
+data.setCell(0, 3, 16);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 16 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -278,12 +254,20 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.LoginTC</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initWeb</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">logintest</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">59605 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">driverClose</span>
+                <span class="method-start">59629 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

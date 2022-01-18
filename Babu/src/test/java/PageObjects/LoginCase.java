@@ -7,11 +7,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class LoginCase {
-
-
 	
-	@FindBy(name="q")
-	public static WebElement userName;   
+	/*
+	 * @FindBy(name="q") public static WebElement userName;
+	 */
 	
 	@FindBy(name ="email")
 	public static WebElement UserName;
@@ -19,6 +18,14 @@ public class LoginCase {
 	@FindBy(className="btn btn-default btn-lg btn-block effect ladda-button waves-effect")
 	public static WebElement Singin;  
 	
+	public static WebElement uName(WebDriver driver) {
+		return driver.findElement(By.name("email"));
+	}
+	@FindBy(name="password")
+	public static WebElement password;
+	
+	@FindBy(id="loginButton")
+	public static WebElement Login_button;
 	
 	/*
 	 * public static WebElement username(WebDriver driver) {

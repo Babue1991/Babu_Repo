@@ -3,6 +3,7 @@
 <test name="First Test" > 
 <classes> 
         <class name = "TestCases.LoginTC" /> 
+        <class name = "TestCases.HomeTc" /> 
 </classes> 
 </test> 
 

@@ -5,7 +5,9 @@
     <classes>
       <class name="TestCases.LoginTC">
         <methods>
+          <include name="driverClose"/>
           <include name="logintest"/>
+          <include name="initWeb"/>
         </methods>
       </class> <!-- TestCases.LoginTC -->
     </classes>
